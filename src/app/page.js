@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TechStack from "./components/TechStack";
+import TechStack from "./components/TechStack.jsx";
 import Skills from "./skills/page";
 import Contact from "./contact/page";
 import Footer from "./components/Footer";
