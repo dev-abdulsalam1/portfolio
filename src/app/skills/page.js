@@ -1,124 +1,87 @@
-import { MdDesignServices, MdSecurity, MdDeveloperMode } from "react-icons/md";
-import { VscSymbolInterface } from "react-icons/vsc";
-import { IoIosGitNetwork } from "react-icons/io";
-import { FaReact } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiNextdotjs } from "react-icons/si";
-import { IoLogoNodejs } from "react-icons/io5";
-import { SiSupabase } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
-import { TbBrandVscode } from "react-icons/tb";
-import { MdWorkHistory } from "react-icons/md";
-import { FaFigma } from "react-icons/fa";
-import { RiNotionFill } from "react-icons/ri";
-import { IoLogoVercel } from "react-icons/io5";
-import { IoCodeWorkingSharp } from "react-icons/io5";
-import { LiaMedapps } from "react-icons/lia";
+import { Code2, Database, Layout, Server, GitBranch, Blocks } from "lucide-react";
 
 
-
-
-
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import Footer from "../components/Footer";
+const skills = [
+  {
+    category: "Frontend",
+    icon: Layout,
+    items: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    category: "Backend",
+    icon: Server,
+    items: ["Node.js", "Express", "REST APIs",],
+  },
+  {
+    category: "Database",
+    icon: Database,
+    items: ["MongoDB", "PostgreSQL", "Supabase"],
+  },
+  {
+    category: "Tools",
+    icon: Code2,
+    items: ["Git", "Docker", "VS Code", "Postman"],
+  },
+  {
+    category: "Version Control",
+    icon: GitBranch,
+    items: ["GitHub", "CI/CD", "GitHub Actions"],
+  },
+  {
+    category: "Other",
+    icon: Blocks,
+    items: ["Figma", "Responsive Design", "SEO", "Testing"],
+  },
+];
 
 export default function Skills() {
+
   return (
-    <div> 
-    <section className="h-auto flex justify-center mb-20 mt-10">
-      <Tabs defaultValue="account" className="w-full  max-w-5xl">
-        {/* Tab Buttons */}
-        <TabsList className="flex w-full justify-centercbg-gray-200 gap-4 mb-6">
-          <TabsTrigger value="account"><MdWorkHistory /> Expertise</TabsTrigger>
-          <TabsTrigger value="skills"><IoCodeWorkingSharp /> Skills</TabsTrigger>
-          <TabsTrigger value="software"><LiaMedapps /> Software</TabsTrigger>
-        </TabsList>
+    <section id="skills" className="py-24 bg-background">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-16 space-y-4 animate-fade-in">
+          <p className="text-sm uppercase tracking-widest text-muted-foreground font-medium">
+            My Expertise
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold">
+            Skills & <span className="text-muted-foreground">Technologies</span>
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            A comprehensive toolkit for building modern, scalable web applications
+          </p>
+        </div>
 
-        {/* Expertise Grid */}
-        <TabsContent value="account">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-            <div className="bg-gray-200 flex items-center gap-3 px-4 py-3 rounded-md font-bold dark:text-black">
-              <MdDesignServices className="text-2xl" /> Frontend Development
-            </div>
-
-            <div className="bg-gray-200 flex items-center gap-3 px-4 py-3 rounded-md font-bold dark:text-black">
-              <VscSymbolInterface className="text-2xl" /> Backend Development
-            </div>
-
-            <div className="bg-gray-200 flex items-center gap-3 px-4 py-3 rounded-md font-bold dark:text-black">
-              <IoIosGitNetwork className="text-2xl" /> Agile Workflow
-            </div>
-
-            <div className="bg-gray-200 flex items-center gap-3 px-4 py-3 rounded-md font-bold dark:text-black">
-              <MdSecurity className="text-2xl" /> Authentication & Security
-            </div>
-
-            <div className="bg-gray-200 flex items-center gap-3 px-4 py-3 rounded-md font-bold dark:text-black">
-              <MdDeveloperMode className="text-2xl" /> Deployment & DevOps
-            </div>
-          </div>
-        </TabsContent>
-
-        {/* Skills Grid */}
-        <TabsContent value="skills">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
-            <div className="bg-gray-200 flex flex-col items-center justify-center gap-2 px-4 py-6 rounded-md font-bold dark:text-black">
-              <FaReact className="text-4xl text-blue-500" />
-              React.js
-            </div>
-
-            <div className="bg-gray-200 flex flex-col items-center justify-center gap-2 px-4 py-6 rounded-md font-bold dark:text-black">
-              <SiNextdotjs className="text-4xl" />
-              Next.js
-            </div>
-
-            <div className="bg-gray-200 flex flex-col items-center justify-center gap-2 px-4 py-6 rounded-md font-bold dark:text-black">
-              <RiTailwindCssFill className="text-4xl text-sky-400" />
-              Tailwind CSS
-            </div>
-
-            <div className="bg-gray-200 flex flex-col items-center justify-center gap-2 px-4 py-6 rounded-md font-bold dark:text-black">
-              <IoLogoNodejs  className="text-4xl text-green-600" />
-              Node.js
-            </div>
-
-            <div className="bg-gray-200 flex flex-col items-center justify-center gap-2 px-4 py-6 rounded-md font-bold dark:text-black">
-              <SiSupabase  className="text-4xl text-green-500" />
-              Supabase
-            </div>
-
-            <div className="bg-gray-200 flex flex-col items-center justify-center gap-2 px-4 py-6 rounded-md font-bold dark:text-black">
-              <FaGithub className="text-4xl" />
-              Git & GitHub
-            </div>
-          </div>
-        </TabsContent>
-
-        {/* Software Grid */}
-        <TabsContent value="software">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
-            <div className="bg-gray-200 flex flex-col items-center justify-center gap-2 px-4 py-6 rounded-md font-bold dark:text-black">
-              <TbBrandVscode  className="text-4xl text-blue-600" />
-              VS Code
-            </div>
-
-            <div className="bg-gray-200 flex flex-col items-center justify-center gap-2 px-4 py-6 rounded-md font-bold dark:text-black">
-              <IoLogoVercel  className="text-4xl text-black" />
-              Vercel
-            </div>
-
-            <div className="bg-gray-200 flex flex-col items-center justify-center gap-2 px-4 py-6 rounded-md font-bold dark:text-black">
-              <FaFigma className="text-4xl text-green-500" />
-              Figma
-            </div>
-            <div className="bg-gray-200 flex flex-col items-center justify-center gap-2 px-4 py-6 rounded-md font-bold dark:text-black">
-              <RiNotionFill  className="text-4xl text-black" />
-              Notion
-            </div>
-          </div>
-        </TabsContent>
-      </Tabs>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skills.map((skill, index) => {
+            const Icon = skill.icon;
+            return (
+              <div
+                key={skill.category}
+                className="group p-8 rounded-2xl border-2 border-border hover:border-foreground transition-all duration-300 hover:shadow-lg animate-fade-in-up"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="p-3 rounded-lg bg-muted group-hover:bg-foreground transition-colors duration-300">
+                    <Icon className="h-6 w-6 group-hover:text-background transition-colors duration-300" />
+                  </div>
+                  <h3 className="text-xl font-bold">{skill.category}</h3>
+                </div>
+                <ul className="space-y-2">
+                  {skill.items.map((item) => (
+                    <li
+                      key={item}
+                      className="text-muted-foreground flex items-center"
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-foreground mr-3" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </section>
-    </div>
   );
-}
+};

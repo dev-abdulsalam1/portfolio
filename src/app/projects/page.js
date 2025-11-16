@@ -1,74 +1,114 @@
-"use client";
+import { ExternalLink, Github } from "lucide-react";
+import { Button } from "../../components/ui/button";
 import Image from "next/image";
-import Footer from "../components/Footer";
 
 const projects = [
   {
-    title: "Hotel Booking App",
-    desc: "A full-stack hotel booking system with room search, reservations, and payments",
-    label: "Full-Stack",
-    img: "/booking.png",
-    link: "https://hotel-booking-demo.vercel.app", 
+    title: "Saas Landing Page",
+    description:
+      "A powerful productivity platform that helps you track progress, stay organized, and work smarter—not harder.",
+    image: "/images/proj-1.png",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://saas-landing-steel.vercel.app/",
+    codeUrl: "https://github.com/dev-abdulsalam1/Saas-landing",
   },
   {
-    title: "E-Commerce App",
-    desc: "Full-stack app with Next.js, Supabase & Tailwind",
-    label: "Full-Stack",
-    img: "/commerce.png",
-    link: "https://ecommerce-demo.vercel.app",
+    title: "Hotel Booking system",
+    description:
+      "A modern, responsive platform for seamless hotel reservations, real-time availability",
+    image: "/images/booking.png",
+    tech: ["React", "TypeScript", "Supabase", "Tailwind"],
+    liveUrl: "https://hotel-booking-demo.vercel.app/",
+    codeUrl: "#",
   },
   {
-    title: "Portfolio Website",
-    desc: "Personal responsive portfolio site with animations",
-    label: "Frontend",
-    img: "/portfolio.png",
-    link: "https://your-portfolio.vercel.app",
+    title: "Portfolio CMS",
+    description:
+      "Content management system for creative professionals and agencies",
+    image: "/images/commerce.png",
+    tech: ["React", "Express", "PostgreSQL",],
+    liveUrl: "#",
+    codeUrl: "#",
   },
 ];
-
 export default function Projects() {
+
   return (
-    <section>
-      <h1 className="mt-20 mb-10 text-4xl font-bold  ms-20">
-        Projects
-      </h1>
-      <div className="grid md:grid-cols-3 gap-8 justify-center px-6">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="relative group bg-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-            {/* Project Image */}
-            <Image
-              src={project.img}
-              alt={project.title}
-              width={400}
-              height={250}
-              className="object-cover w-full h-52"
-            />
+    <section id="projects" className="py-24 bg-muted">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-16 space-y-4 animate-fade-in">
+          <p className="text-sm uppercase tracking-widest text-muted-foreground font-medium">
+            My Work
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold">
+            Featured <span className="text-muted-foreground">Projects</span>
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            A selection of projects that showcase my skills and experience
+          </p>
+        </div>
 
-            {/* Text */}
-            <div className="p-4">
-              <h2 className="text-lg font-semibold dark:text-black">{project.title}</h2>
-              <p className="text-gray-600 text-sm">{project.desc}</p>
-              <span className="inline-block mt-2 px-2 py-1 text-xs bg-gray-500 text-white rounded">
-                {project.label}
-              </span>
-            </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={project.title}
+              className="group bg-background rounded-2xl overflow-hidden border-2 border-border hover:border-foreground transition-all duration-300 hover:shadow-xl animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              {/* Image */}
+              <div className="relative aspect-video overflow-hidden">
+                <Image
+                  width={500}
+                  height={500}
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover grayscale group-hover:scale-110 group-hover:grayscale-0 transition-all duration-500"
+                />
+                <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors duration-300" />
+              </div>
 
-            {/* Hover Overlay */}
-            <div className="absolute inset-0 bg-white/70 dark:bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 bg-primary text-white font-medium rounded hover:bg-white hover:text-primary dark:hover:bg-gray-200 dark:hover:text-black transition"
-              >
-                View Project
-              </a>
+              {/* Content */}
+              <div className="p-6 space-y-4">
+                <div className="space-y-2">
+                  <h3 className="text-xl font-bold">{project.title}</h3>
+                  <p className="text-sm text-muted-foreground">
+                    {project.description}
+                  </p>
+                </div>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 text-xs font-medium bg-muted rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Buttons */}
+                <div className="flex gap-3 pt-2">
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    <Button variant="outline" size="sm" className="group/btn w-full">
+                      <ExternalLink className="mr-2 h-4 w-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                      Live Demo
+                    </Button>
+                  </a>
+                  <a href={project.codeUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    <Button variant="outline" size="sm" className="w-full">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </Button>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
-}
+};
+
