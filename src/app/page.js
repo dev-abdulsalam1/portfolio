@@ -20,7 +20,9 @@ export default function Home() {
           {/* Text Content */}
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">
-              Abdulsalam Hassan
+              <Link href="/">
+                Abdulsalam Hassan
+              </Link>
             </h1>
 
             <h2 className="text-xl md:text-2xl font-semibold text-gray-600 dark:text-gray-300 mb-6">
