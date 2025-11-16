@@ -36,7 +36,7 @@ export default function About() {
 
                         <div className="space-y-4 text-muted-foreground">
                             <p>
-                                I&apos;m <b className="text-black">Abdulsalam Shiikhow</b>  — a passionate Full-Stack Developer and Computer Science student dedicated to building modern, scalable, and user-focused digital experiences. I love turning ideas into real products using technologies like React, Next.js, TypeScript, Node.js, MongoDB and modern UI frameworks.
+                                I&apos;m <b className="text-black">Abdulsalam Hassan</b>  — a passionate Full-Stack Developer and Computer Science student dedicated to building modern, scalable, and user-focused digital experiences. I love turning ideas into real products using technologies like React, Next.js, TypeScript, Node.js, MongoDB and modern UI frameworks.
                             </p>
                             <p>
                                 I&apos;m always learning, improving, and pushing my skills forward — from mastering frontend development to exploring backend systems, cloud technologies, and AI engineering. I enjoy solving real problems, building clean interfaces, and creating tools that make life easier for users.

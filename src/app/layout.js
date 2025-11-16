@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata = {
-  title: "Abdulsalam -Portfolio",
-  description: "MERN FullStack developer",
+  title: "Abdulsalam Hassan | Full-Stack Developer",
+  description: "Portfolio of Abdulsalam Hassan, a modern full-stack developer specializing in MERN, Next.js, and high-quality web applications.",
 };
 
 export default function RootLayout({ children }) {
@@ -17,15 +17,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${inter.className} antialiased `}>
-       <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Navigation />
-            {children}
-          </ThemeProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navigation />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
