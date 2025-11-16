@@ -30,3 +30,9 @@ Contact form integrated with email or API
 Dark/light mode toggle (optional)
 
 Clean and reusable component structure
+
+
+## 🚀 Deployment
+
+This project is deployed on Vercel. Check it out here:
+[🌐 Live Demo](https://abdulsalam-ten.vercel.app/)
