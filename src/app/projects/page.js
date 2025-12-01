@@ -6,11 +6,7 @@ const projects = [
   {
     title: "Saas Landing Page",
     description:
-<<<<<<< HEAD
       "A powerful productivity platform that helps you track progress, stay organized, and work smarter—not harder.",
-=======
-      "A full-featured online shopping platform with cart, payments, and admin dashboard",
->>>>>>> 52b5a41 (last polsih portfolio)
     image: "/images/proj-1.png",
     tech: ["Next.js", "Tailwind CSS", "TypeScript"],
     liveUrl: "https://saas-landing-steel.vercel.app/",
@@ -30,11 +26,7 @@ const projects = [
     description:
       "Content management system for creative professionals and agencies",
     image: "/images/commerce.png",
-<<<<<<< HEAD
     tech: ["React", "Express", "PostgreSQL",],
-=======
-    tech: ["React", "Express", "PostgreSQL", "AWS"],
->>>>>>> 52b5a41 (last polsih portfolio)
     liveUrl: "#",
     codeUrl: "#",
   },

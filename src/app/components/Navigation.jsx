@@ -5,11 +5,7 @@ import { ModeToggle } from "@/components/ui/ModeToggle";
 
 export default function Navigation() {
   return (
-<<<<<<< HEAD
     <nav className=" mt-4 rounded-sm px-3 shadow-sm bg-background dark:bg-card dark:text-card-foreground py-2 sticky top-0 z-50 mx-12 md:mx-[50px]">
-=======
-    <nav className="sticky top-0 z-50 mt-4 rounded-sm px-3 py-2 shadow-sm bg-background dark:bg-card dark:text-card-foreground mx-4 md:mx-12">
->>>>>>> 52b5a41 (last polsih portfolio)
       <div className="flex items-center justify-between">
 
         {/* Logo / Brand */}
