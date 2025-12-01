@@ -14,16 +14,13 @@ import { ArrowRight } from "lucide-react";
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="py-20 px-4 h-[650px]">
-        <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row md:gap-10 items-center justify-between">
-          {/* Text Content */}
-          <div className="flex-1 text-center md:text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">
-              <Link href="/">
-                Abdulsalam Hassan
-              </Link>
-            </h1>
+    <section className="py-20 px-4 mt-10">
+      <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row  md:gap-5 items-center justify-around gap-10 px-4">
+        {/* Text Content */}
+        <div className="flex-1 text-center md:text-left">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4">
+            Abdulsalam Shiikhow
+          </h1>
 
             <h2 className="text-xl md:text-2xl font-semibold text-gray-600 dark:text-gray-300 mb-6">
               Full-Stack Developer

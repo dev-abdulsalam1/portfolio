@@ -8,7 +8,11 @@ export default function About() {
             <div className="max-w-6xl mx-auto px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Image */}
+<<<<<<< HEAD
                     <div className="relative animate-fade-in hidden md:block">
+=======
+                    <div className="relative animate-fade-in">
+>>>>>>> 52b5a41 (last polsih portfolio)
                         <div className="aspect-square rounded-2xl overflow-hidden border-2 border-border">
                             <Image
                                 width={500}
@@ -36,10 +40,23 @@ export default function About() {
 
                         <div className="space-y-4 text-muted-foreground">
                             <p>
+<<<<<<< HEAD
                                 I&apos;m <b className="text-black">Abdulsalam Hassan</b>  — a passionate Full-Stack Developer and Computer Science student dedicated to building modern, scalable, and user-focused digital experiences. I love turning ideas into real products using technologies like React, Next.js, TypeScript, Node.js, MongoDB and modern UI frameworks.
                             </p>
                             <p>
                                 I&apos;m always learning, improving, and pushing my skills forward — from mastering frontend development to exploring backend systems, cloud technologies, and AI engineering. I enjoy solving real problems, building clean interfaces, and creating tools that make life easier for users.
+=======
+                                I&apos;m a full-stack developer with a passion for creating elegant,
+                                user-centric web applications. My journey in web development started
+                                with a fascination for how design and functionality merge to create
+                                exceptional user experiences.
+                            </p>
+                            <p>
+                                With expertise in modern technologies like React, Next.js, and
+                                Tailwind CSS, I specialize in building responsive, performant
+                                applications that solve real-world problems. I believe in writing
+                                clean, maintainable code and following best practices.
+>>>>>>> 52b5a41 (last polsih portfolio)
                             </p>
                         </div>
                         <a href="/Abdulsalam_Hassan_shiikhow.pdf" download>

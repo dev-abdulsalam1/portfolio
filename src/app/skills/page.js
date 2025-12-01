@@ -10,12 +10,20 @@ const skills = [
   {
     category: "Backend",
     icon: Server,
+<<<<<<< HEAD
     items: ["Node.js", "Express", "REST APIs",],
+=======
+    items: ["Node.js", "Express", "REST APIs", "GraphQL"],
+>>>>>>> 52b5a41 (last polsih portfolio)
   },
   {
     category: "Database",
     icon: Database,
+<<<<<<< HEAD
     items: ["MongoDB", "PostgreSQL", "Supabase"],
+=======
+    items: ["MongoDB", "PostgreSQL", "Redis", "Supabase"],
+>>>>>>> 52b5a41 (last polsih portfolio)
   },
   {
     category: "Tools",
@@ -25,7 +33,11 @@ const skills = [
   {
     category: "Version Control",
     icon: GitBranch,
+<<<<<<< HEAD
     items: ["GitHub", "CI/CD", "GitHub Actions"],
+=======
+    items: ["GitHub", "GitLab", "CI/CD", "GitHub Actions"],
+>>>>>>> 52b5a41 (last polsih portfolio)
   },
   {
     category: "Other",
